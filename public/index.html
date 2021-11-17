@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtime Comment System</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mt-4">My Blog Post</h1>
+
+        <div class="col-md-12 blog-post">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, accusantium officia. Fugiat est obcaecati
+            possimus
+            veniam earum expedita sapiente reprehenderit rerum nobis ab aperiam consequatur maiores tenetur, dignissimos
+            eos
+            placeat nesciunt sunt molestiae beatae ipsa velit? Consequuntur quo commodi cumque eius quis alias porro
+            labore
+            temporibus architecto non officia voluptatem vero, quos praesentium fugiat numquam ab incidunt, sint, quae
+            nihil
+            vitae! Quia maxime possimus dolorem mollitia, quidem quis ea tenetur temporibus exercitationem neque saepe?
+            Soluta dolores excepturi voluptates deleniti dolor, perspiciatis facilis aut placeat laborum laudantium
+            tenetur.
+            Commodi iusto amet, fugit nobis numquam atque nulla soluta culpa illo dolorem nostrum velit debitis
+            necessitatibus dicta asperiores tenetur expedita facere exercitationem in eos libero neque! Doloremque alias
+            soluta quibusdam, a provident qui id tempore eligendi minus enim consequatur repellat!
+        </div>
+
+        <div class="row mt-4 mb-4">
+            <div class="col-md-12">
+                <h4 class="border-bottom pb-2">Comments</h4>
+            </div>
+
+            <div class="form-group mt-2">
+                <label for="">Write a Comment</label>
+                <textarea id="textarea" rows="3" class="form-control" placeholder="Write a comment ..."></textarea>
+            </div>
+            <div class="col-md-12">
+                <button id="submit-btn" class="btn btn-primary float-right">Post Comment</button>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="typing text-success"></div>
+                <ul class="comment_box">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="/socket.io/socket.io.js"></script>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
